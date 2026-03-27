@@ -1,0 +1,9 @@
+# Large dataset files — download from Kaggle locally
+sales_train_validation.csv
+sales_train_evaluation.csv
+sell_prices.csv
+
+# Generated outputs
+*.parquet
+__pycache__/
+.ipynb_checkpoints/
