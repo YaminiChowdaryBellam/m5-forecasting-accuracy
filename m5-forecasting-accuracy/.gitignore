@@ -7,3 +7,13 @@ sell_prices.csv
 *.parquet
 __pycache__/
 .ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
+
+# Word temp lock files
+~$*
+
+# Superseded model files (replaced by lgb_model.txt + two_stage/v2 variants)
+lgb_baseline.txt
+lgb_no_itemid.txt
