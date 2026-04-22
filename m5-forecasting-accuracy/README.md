@@ -6,14 +6,16 @@ End-to-end demand forecasting pipeline built on the [M5 Forecasting Accuracy](ht
 
 ## Results Summary
 
-| Model | Mean RMSSE | vs Seasonal Naive |
-|---|---|---|
-| Seasonal Naive (lag-7) | 51.47 | — |
-| Rolling Mean 28 | 40.40 | −21% |
-| LightGBM (19 features) | **~0.55** | −99% |
-| Two-Stage (intermittent) | ~0.53 | best on sparse series |
+> DEV_MODE results: CA_1 + CA_3 stores, 1-year training window. Run with `DEV_MODE=False` on Kaggle for full CA results.
 
-RMSSE (Root Mean Squared Scaled Error) is the official M5 metric — lower is better, and 1.0 = matches a naïve seasonal baseline.
+| Model | Median RMSSE | vs Seasonal Naive |
+|---|---|---|
+| Seasonal Naive (lag-7) | 0.958 | — |
+| Rolling Mean 28 | 0.713 | −26% |
+| LightGBM (19 features) | **0.705** | −26% |
+| Two-Stage v2 (+ intermittency features) | **0.705** | −26% overall; −4% on sparse series |
+
+RMSSE (Root Mean Squared Scaled Error) is the official M5 metric — lower is better, 1.0 = matches a naïve seasonal baseline. Median is reported as mean is skewed by intermittent series with near-zero scale denominators.
 
 ---
 
