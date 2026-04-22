@@ -6,7 +6,7 @@ End-to-end demand forecasting pipeline built on the [M5 Forecasting Accuracy](ht
 
 ## Results Summary
 
-> DEV_MODE results: CA_1 + CA_3 stores, 1-year training window. Run with `DEV_MODE=False` on Kaggle for full CA results.
+> DEV_MODE results: CA_1 + CA_3 stores, 2-year window (last 28 days held out for validation). Run with `DEV_MODE=False` on Kaggle for full CA results.
 
 | Model | Median RMSSE | vs Seasonal Naive |
 |---|---|---|
