@@ -11,9 +11,20 @@ __pycache__/
 # macOS metadata
 .DS_Store
 
+# Claude project files
+.claude/
+
 # Word temp lock files
 ~$*
 
 # Superseded model files (replaced by lgb_model.txt + two_stage/v2 variants)
 lgb_baseline.txt
 lgb_no_itemid.txt
+
+# Local-only files (interview prep, drafts, superseded notebooks)
+baseline_model_explanation.docx
+EDA_SUMMARY.md
+ca_analysis.ipynb
+ca_eda.ipynb
+ca_model.ipynb
+SalesForecasting.ipynb
